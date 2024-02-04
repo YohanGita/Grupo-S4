@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/gs4.css">
+    <link rel="stylesheet" href="css/helpers.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="js/sideBar.js"></script>
+    <title>Grupo S4</title>
+</head>
+<body>
+    <div id="header">
+        <nav>
+            <div id="closeMobile">
+                <button class="hmenu" onclick="sideBar_close()"><i class="bi bi-x-lg"></i></button>
+            </div>
+            <div class="flex-row mmobile">
+                    <div class="hm d-flex">
+                        <button class="hmenu" onclick="sideBar_open()"><i class="bi bi-list"></i></button>
+                    </div>
+
+                    <div class="logo">
+                        <a href="empresas.html" class="hlogo"><img src="imagenes/logo_Secondary.svg" alt="Grupo S4"></a>
+                    </div>
+
+                    <div class="usuario">
+                        <div class="row d-flex align-items-center">
+                            <div class="usuarioData col-lg-9 text-end">
+                                <div><span class="text_bold">Brenda</span> <span class="text_light">Altamirano</span></div>
+                                <div class="text_light">Admin <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                                <div class="col-lg-3">
+                                    <img src="imagenes/img-user.png" alt="">
+                                </div>
+                            </div>
+                    </div>
+
+            </div>
+        </nav>
+ 
+    </div>
+    <div class="content p-0 d-flex">
+        <div id="mySidebar" class="side-bar">
+            
+            <div class="back-home">
+                <a href="empresas.html">
+                    <span><i class="bi bi-chevron-left"></i></span>
+                    <span class="font-24 text_bold">Grupo S4</span>
+                </a>
+            </div>
+            <div class="side-menu">
+                <ul>
+                    <a href="dashboard.html"><li><img src="../Grupo-S4/imagenes/ic_Dashboard.svg" class="mr-16">Dashboard <i class="bi bi-chevron-right fr text_bold class="breadcrum text_red_accent""></i></li></a>
+                    <a href="colaboradores.html"><li><img src="../Grupo-S4/imagenes/ic_Employees.svg" class="mr-16">Colaboradores <i class="bi bi-chevron-right fr text_bold"></i></li></a>
+                    <a href="incidencias.html"><li><img src="../Grupo-S4/imagenes/ic_Incidents.svg" class="mr-16">Incidencias <i class="bi bi-chevron-right fr text_bold"></i></li></a>
+                    <a href="prenomina.html"><li><img src="../Grupo-S4/imagenes/ic_PayRoll.svg" class="mr-16">Prenómina <i class="bi bi-chevron-right fr text_bold"></i></li></a>
+                    <a href="kpis.html"><li><img src="../Grupo-S4/imagenes/ic_Reports.svg" class="mr-16">KPI's <i class="bi bi-chevron-right fr text_bold"></i></li></a>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div id="colaboradores">
+                 <!--Titulo Sección-->
+                <div class="titulo-seccion">
+                    <span class="text_bold font-24">Colaboradores</span>
+                    <div class="breadcrum text_red_accent"><span class="text_bold">GS4</span> / Colaboradores</div>
+                </div>
+                 <!--Buscador Colaboradores-->
+                <div id="buscador" class="mt-24">
+                            <nav class="navbar mb-24">
+                                <div class="buscador">
+                                    <form class="form-inline">
+                                        <input class="form-control mr-12" type="search" placeholder="Buscar" aria-label="Search">
+                                        <button class="btn btn_secondary btn_sm mr-12" type="submit">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-search mr_16" viewBox="0 0 16 16">
+                                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                        </svg>Buscar
+                                        </button>
+                                    </form>    
+                                </div>
+                                <div class="agregarColaborador">
+                                    <button class="btn btn_primary btn-add-colaborador">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-circle mr_16" viewBox="0 0 16 16">
+                                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                        </svg>
+                                        Alta colaborador
+                                    </button>
+                                </div>
+                            </nav>
+                </div>
+                 <!--Cards-->
+                <div class="d-flex flex-wrap">
+                        
+                        <div class="cardColaborador">
+                            <div><img src="imagenes/img_avatar_colaborador.svg" alt="Colaborador"></div>
+                            <div class="ml-12 w-100">
+                                <span class="text_bold">Bernardo Galavez Pérez</span><br>
+                                <span class="fs-12 text_secondary_accent">Chofer</span><br>
+                                <span class="fs-12 text_red_accent">52 55 8877 6655</span>
+                            </div>
+                            <div class="kebab">
+                                <button>
+                                    <i class="bi bi-three-dots-vertical fs-24"></i>
+                                </button>
+                                
+                            </div>
+                        </div>
+
+                        <div class="cardColaborador">
+                            <div><img src="imagenes/img_avatar_colaborador.svg" alt="Colaborador"></div>
+                            <div class="ml-12 w-100">
+                                <span class="text_bold">Bernardo Galavez Pérez</span><br>
+                                <span class="fs-12 text_secondary_accent">Chofer</span><br>
+                                <span class="fs-12 text_red_accent">52 55 8877 6655</span>
+                            </div>
+                            <div class="kebab">
+                                <button>
+                                    <i class="bi bi-three-dots-vertical fs-24"></i>
+                                </button>
+                                
+                            </div>
+                        </div>
+
+                        <div class="cardColaborador">
+                            <div><img src="imagenes/img_avatar_colaborador.svg" alt="Colaborador"></div>
+                            <div class="ml-12 w-100">
+                                <span class="text_bold">Bernardo Galavez Pérez</span><br>
+                                <span class="fs-12 text_secondary_accent">Chofer</span><br>
+                                <span class="fs-12 text_red_accent">52 55 8877 6655</span>
+                            </div>
+                            <div class="kebab">
+                                <button>
+                                    <i class="bi bi-three-dots-vertical fs-24"></i>
+                                </button>
+                                
+                            </div>
+                        </div>
+
+                        <div class="cardColaborador">
+                            <div><img src="imagenes/img_avatar_colaborador.svg" alt="Colaborador"></div>
+                            <div class="ml-12 w-100">
+                                <span class="text_bold">Bernardo Galavez Pérez</span><br>
+                                <span class="fs-12 text_secondary_accent">Chofer</span><br>
+                                <span class="fs-12 text_red_accent">52 55 8877 6655</span>
+                            </div>
+                            <div class="kebab">
+                                <button>
+                                    <i class="bi bi-three-dots-vertical fs-24"></i>
+                                </button>
+                                
+                            </div>
+                        </div>
+
+                        <div class="cardColaborador">
+                            <div><img src="imagenes/img_avatar_colaborador.svg" alt="Colaborador"></div>
+                            <div class="ml-12 w-100">
+                                <span class="text_bold">Bernardo Galavez Pérez</span><br>
+                                <span class="fs-12 text_secondary_accent">Chofer</span><br>
+                                <span class="fs-12 text_red_accent">52 55 8877 6655</span>
+                            </div>
+                            <div class="kebab">
+                                <button>
+                                    <i class="bi bi-three-dots-vertical fs-24"></i>
+                                </button>
+                                
+                            </div>
+                        </div>
+
+                        <div class="cardColaborador">
+                            <div><img src="imagenes/img_avatar_colaborador.svg" alt="Colaborador"></div>
+                            <div class="ml-12 w-100">
+                                <span class="text_bold">Bernardo Galavez Pérez</span><br>
+                                <span class="fs-12 text_secondary_accent">Chofer</span><br>
+                                <span class="fs-12 text_red_accent">52 55 8877 6655</span>
+                            </div>
+                            <div class="kebab">
+                                <button>
+                                    <i class="bi bi-three-dots-vertical fs-24"></i>
+                                </button>
+                                
+                            </div>
+                        </div>
+
+                        <div class="cardColaborador">
+                            <div><img src="imagenes/img_avatar_colaborador.svg" alt="Colaborador"></div>
+                            <div class="ml-12 w-100">
+                                <span class="text_bold">Bernardo Galavez Pérez</span><br>
+                                <span class="fs-12 text_secondary_accent">Chofer</span><br>
+                                <span class="fs-12 text_red_accent">52 55 8877 6655</span>
+                            </div>
+                            <div class="kebab">
+                                <button>
+                                    <i class="bi bi-three-dots-vertical fs-24"></i>
+                                </button>
+                                
+                            </div>
+                        </div>
+
+                        <div class="cardColaborador">
+                            <div><img src="imagenes/img_avatar_colaborador.svg" alt="Colaborador"></div>
+                            <div class="ml-12 w-100">
+                                <span class="text_bold">Bernardo Galavez Pérez</span><br>
+                                <span class="fs-12 text_secondary_accent">Chofer</span><br>
+                                <span class="fs-12 text_red_accent">52 55 8877 6655</span>
+                            </div>
+                            <div class="kebab">
+                                <button>
+                                    <i class="bi bi-three-dots-vertical fs-24"></i>
+                                </button>
+                                
+                            </div>
+                        </div>
+
+                        <div class="cardColaborador">
+                            <div><img src="imagenes/img_avatar_colaborador.svg" alt="Colaborador"></div>
+                            <div class="ml-12 w-100">
+                                <span class="text_bold">Bernardo Galavez Pérez</span><br>
+                                <span class="fs-12 text_secondary_accent">Chofer</span><br>
+                                <span class="fs-12 text_red_accent">52 55 8877 6655</span>
+                            </div>
+                            <div class="kebab">
+                                <button>
+                                    <i class="bi bi-three-dots-vertical fs-24"></i>
+                                </button>
+                                
+                            </div>
+                        </div>
+
+                        <div class="cardColaborador">
+                            <div><img src="imagenes/img_avatar_colaborador.svg" alt="Colaborador"></div>
+                            <div class="ml-12 w-100">
+                                <span class="text_bold">Bernardo Galavez Pérez</span><br>
+                                <span class="fs-12 text_secondary_accent">Chofer</span><br>
+                                <span class="fs-12 text_red_accent">52 55 8877 6655</span>
+                            </div>
+                            <div class="kebab">
+                                <button>
+                                    <i class="bi bi-three-dots-vertical fs-24"></i>
+                                </button>
+                                
+                            </div>
+                        </div>
+
+                        <div class="cardColaborador">
+                            <div><img src="imagenes/img_avatar_colaborador.svg" alt="Colaborador"></div>
+                            <div class="ml-12 w-100">
+                                <span class="text_bold">Bernardo Galavez Pérez</span><br>
+                                <span class="fs-12 text_secondary_accent">Chofer</span><br>
+                                <span class="fs-12 text_red_accent">52 55 8877 6655</span>
+                            </div>
+                            <div class="kebab">
+                                <button>
+                                    <i class="bi bi-three-dots-vertical fs-24"></i>
+                                </button>
+                                
+                            </div>
+                        </div>
+
+                        <div class="cardColaborador">
+                            <div><img src="imagenes/img_avatar_colaborador.svg" alt="Colaborador"></div>
+                            <div class="ml-12 w-100">
+                                <span class="text_bold">Bernardo Galavez Pérez</span><br>
+                                <span class="fs-12 text_secondary_accent">Chofer</span><br>
+                                <span class="fs-12 text_red_accent">52 55 8877 6655</span>
+                            </div>
+                            <div class="kebab">
+                                <button>
+                                    <i class="bi bi-three-dots-vertical fs-24"></i>
+                                </button>
+                                
+                            </div>
+                        </div>
+
+                        <div class="cardColaborador">
+                            <div><img src="imagenes/img_avatar_colaborador.svg" alt="Colaborador"></div>
+                            <div class="ml-12 w-100">
+                                <span class="text_bold">Bernardo Galavez Pérez</span><br>
+                                <span class="fs-12 text_secondary_accent">Chofer</span><br>
+                                <span class="fs-12 text_red_accent">52 55 8877 6655</span>
+                            </div>
+                            <div class="kebab">
+                                <button>
+                                    <i class="bi bi-three-dots-vertical fs-24"></i>
+                                </button>
+                                
+                            </div>
+                        </div>
+
+                        <div class="cardColaborador">
+                            <div><img src="imagenes/img_avatar_colaborador.svg" alt="Colaborador"></div>
+                            <div class="ml-12 w-100">
+                                <span class="text_bold">Bernardo Galavez Pérez</span><br>
+                                <span class="fs-12 text_secondary_accent">Chofer</span><br>
+                                <span class="fs-12 text_red_accent">52 55 8877 6655</span>
+                            </div>
+                            <div class="kebab">
+                                <button>
+                                    <i class="bi bi-three-dots-vertical fs-24"></i>
+                                </button>
+                                
+                            </div>
+                        </div>
+
+                        <div class="cardColaborador">
+                            <div><img src="imagenes/img_avatar_colaborador.svg" alt="Colaborador"></div>
+                            <div class="ml-12 w-100">
+                                <span class="text_bold">Bernardo Galavez Pérez</span><br>
+                                <span class="fs-12 text_secondary_accent">Chofer</span><br>
+                                <span class="fs-12 text_red_accent">52 55 8877 6655</span>
+                            </div>
+                            <div class="kebab">
+                                <button>
+                                    <i class="bi bi-three-dots-vertical fs-24"></i>
+                                </button>
+                                
+                            </div>
+                        </div>
+
+                </div> 
+                 <!--Paginador-->
+                <div class="row paginador mt-24 d-flex justify-content-center">
+                        <nav class="d-flex justify-content-center">
+                            <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span><i class="bi bi-chevron-left"></i></span>
+                                </a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span><i class="bi bi-chevron-right"></i></span>
+                                </a>
+                            </li>
+                            </ul>
+                        </nav>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>  
+</body>
+</html>

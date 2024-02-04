@@ -1,0 +1,179 @@
+/*+++++++++++++++++++++++++++++BreakPoints++++++++++++++++++++++++++++++++*/
+
+/* T 952 M 858 */
+
+/*++++++++++++Tableta++++++++++++*/
+@media (max-width: 952px){
+    .main {
+        width: 75% !important;
+    }
+
+}
+/*++++++++++++Mobile++++++++++++*/
+@media (max-width: 858px){
+    .main {
+        position: absolute;
+        left: 0;
+        width: 100% !important;
+        padding: 1.5rem;
+    }
+    .mmobile{
+        display: flex;
+        justify-content: space-between;
+    }
+    .hm{
+       display: flex;
+    }
+    .hmenu{
+        background: none;
+        border: 0;
+        color: #fff;
+        font-size: 2rem;
+        display: block;
+        margin-left: 1.5rem
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+    }
+    .usuarioData{
+        display: none;
+    }
+    .side-bar{
+        position: absolute;
+        left: -300px;
+    }
+    .showCloseSB{
+        top: 20px !important;
+        left: 5px !important;
+        display: flex;
+        background-color:#0E323D;
+        height: 60px;
+        width: 60px;
+    }
+    .showSB{
+        position: fixed;
+        top: 96px;
+        left: 0;
+        width: 250px !important;
+        height: 100vh;
+        transition: all .5s;
+    }
+    #closeMobile{
+        position: absolute;
+        left: -100px;
+    }
+
+    /*++++++++++++++FORMS++++++++++++++++++++++*/
+
+    .signin{
+        width: 300px;
+    }
+    .signin img{
+        height: 90px;
+    }
+    .btn_lg {
+        min-width: 230px !important;
+    }
+
+    /*++++++++++++++++++++++++Cards++++++++++++++++++++++++*/
+    .empresa-card img{
+        width: 100px;
+    }
+    .empresa-card {
+        max-height: 210px;
+        max-width: 170px;
+    }
+    .cardDashboard{
+        max-height: 180px;
+    }
+    .card-dash-tit{
+        font-size: 1rem;
+    }
+    .cardIncidencias{
+        width: 30%;
+    }
+
+    /*++++++++++++++++++++++++Buscador++++++++++++++++++++++++*/
+    #buscador nav{
+        height: auto;
+        position: inherit;
+    }
+    /*+++++++++++++++++++++++Nomina++++++++++++++++++++++++++*/
+    #nomina{
+        display: none;    
+    }
+
+    
+}
+
+
+
+
+/*++++++++++++++++Mobile Portrait++++++++++++++++*/
+@media (min-width: 360px) and (max-width: 430px) { 
+    
+    .btn-add-colaborador{
+    width: 100%;
+    }
+
+    .agregarColaborador{
+        width: 100%;
+    }
+
+    .buscador{
+        width: 100%;
+        padding:1rem 0;
+    }
+
+    .cardColaboradorPerfil{
+        height: 450px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .cardIncidencias{
+        width: 100%;
+    }
+    .incidenciasContent .btn_xs{
+        width: 100%;
+
+    }
+    .incidnciaDetalle{
+        display: none;
+    }
+
+}
+/*+++++++++++++++++++++++++++++ Tablet ++++++++++++++++++++++++++++++++++++*/
+@media (min-width: 431px) and (max-width: 1024px) { 
+
+    .buscador{
+        width: 67%;
+        padding:1rem 0;
+    }
+    .side-bar{
+        width: 20%;
+    }
+    .cardColaborador{
+        width: 320px;
+        margin-right: .5rem;
+    }
+    .side-menu {
+        padding: 0 1.5rem 2.5rem 0.5rem !important;
+    }
+    .dias{
+        width: 70px;
+        height: 70px;
+        padding: 1rem;
+    }
+
+}
+/*++++++++++++++++++ >1440 +++++++++++++++++++++++++++++*/
+@media (min-width: 1440px) { 
+
+    .cardColaborador{
+        width: 340px;
+    }
+
+}
+
+
