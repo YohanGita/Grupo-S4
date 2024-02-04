@@ -93,6 +93,9 @@
     .cardIncidencias{
         width: 30%;
     }
+    .cardPerfil{
+        width: 30%;
+    }
 
     /*++++++++++++++++++++++++Buscador++++++++++++++++++++++++*/
     #buscador nav{
@@ -140,6 +143,29 @@
     }
     .incidnciaDetalle{
         display: none;
+    }
+    .cardPerfil{
+        width: 100%;
+    }
+    .perfilContent{
+        width: 100%;
+
+    }
+    #perfilCol .kebab {
+        display: none;
+    }
+    #perfilCol .kebabM {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+    }
+    #perfilCol .kebabM{
+        display: grid;
+        align-self: baseline;
+    }
+    #perfilCol .kebabM button{
+        background-color: transparent;
+        border: none;
     }
 
 }

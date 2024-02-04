@@ -313,6 +313,36 @@ nav{
 .infoPerfil{
     display: contents;
 }
+.edit{
+    display: grid;
+    align-self: baseline;
+    background-color: #CDECF5;
+    border-radius: 2rem;
+    padding: 0.25rem;
+    height: 40px;
+    width: 40px;
+}
+.edit button{
+    background-color: transparent;
+    border: none;
+}
+.cardPerfil{
+    display: flex;
+    width: 31%;
+    height: 275px;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 1.25rem;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.perfilContent{
+    width: 100%;
+    display: contents;
+}
+#perfilCol .kebabM {
+    display: none;
+}
 /*++++++++++++++++++++CardCIncidencias++++++++++++++++++++++++++*/
 .cardIncidencias{
     display: flex;
@@ -354,6 +384,13 @@ nav{
 .buscador{
     display: block;
     width: 78%;
+}
+#colaboradores a{
+    text-decoration: none;
+    color: inherit;
+}
+#colaboradores a:hover{
+    color: #ED3517;
 }
 /*++++++++++++Incidencias+++++++++++++++++++++*/
 #incidencias .buscador{
