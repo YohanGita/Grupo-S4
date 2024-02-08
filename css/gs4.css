@@ -155,6 +155,12 @@ nav{
     width: 100%;
     height: 500px;
 }
+.dashContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2.5rem;
+}
 
 /*++++++++++++++++++++++SIDEBAR+++++++++++++++++++++++++++++++++++++*/
 #mySidebar{
@@ -269,7 +275,7 @@ nav{
 .cardDashboard{
     display: grid;
     align-items: center;
-    /*width: 300px;*/
+    width: 300px;
     height: 220px;
     padding: 1rem;
     background-color: #ffffff;
@@ -406,15 +412,13 @@ nav{
 }
 
 /*++++++++++++++++++++++Filtros++++++++++++++++++++++++++++++++++++**/
-#filtrosNomina{
-    
-}
+
 #filtrosNomina select{
     width: 220px;
     margin: 0 .5rem;
     height: 45px;
 }
-#filtrosNomina select, #faltas select, #faltasd select{
+#filtrosNomina select, #faltas select, #faltasd select, #stepper select{
     background: #ffffff url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='black' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right .75rem center/8px 10px !important;
   }
 #nominaDatos th{
@@ -452,5 +456,134 @@ nav{
 }
 #incidenciasDatos .txt_l{
     text-align: left !important;
+}
+/*+++++++++++++++++++++++++ALTA COLABORADOR++++++++++++++++++++++++++++++++++*/
+#stepper{
+    overflow: visible;
+}
+#stepper form{
+    background-color: #ffffff;
+    border-radius: 1.5rem;
+    padding: 1rem 2rem;
+    min-height: 900px;
+}
+#stepper form label{
+    font-size: 1rem;
+    font-weight: bold;
+}
+#stepper form ::placeholder{
+    font-size: .75rem;
+}
+.registro{
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.registro form{
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    /*transition: .5s ease-in;*/
+}
+.registro form input{
+    border-radius: .5rem;
+}
+.registro form input :focus{
+    outline: none;
+    border: 1px solid #000000;
+}
+.registro form textarea{
+    border-radius: .5rem;
+    width: 100%;
+}
+.registro .custom-file-input {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    border: 1px solid #000000;
+}
+input[type="file-upload-button"]{
+    background-color: #ED3517;
+}
+
+.custom-file-upload {
+    border: 1px solid #0E323D;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    background-color: #0C6C89;
+}
+.campos{
+    width: 33%;
+    margin-right: 2rem;
+}
+#form2{
+    left: -120%;
+}
+#form3{
+    left: -120%;
+}
+#form4{
+    left: -120%;
+}
+.progress_container{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem auto;
+    position: relative;
+    height: fit-content;
+}
+.progress_container::before {
+    content: '';
+    background-color: #B3B3B3;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 2px;
+    width: 100%;    
+    z-index: 1;
+}
+.progress {
+    background-color: #ED3517 !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 0 !important;
+    transform: translateY(-50%)!important;
+    height: 3px !important;
+    width: 0%;
+    z-index: 1 !important;
+    transition:  0.4s ease-in !important;
+}
+.circle{
+    background-color: #FFFFFF;
+    color: #B3B3B3;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    z-index: 1;
+    transition: 0.4s ease-in;
+    border: 1px solid #B3B3B3;
+}
+.circle.active{
+    background-color: #0E323D;
+    color: #ffffff;
+
+}
+.tit_step_container{
+    display: flex;
+    position: absolute;
+    top:3%;
+    width: 80%;
+    justify-content: space-between;
+    margin: 2rem auto;
+    height: fit-content;
 }
 
